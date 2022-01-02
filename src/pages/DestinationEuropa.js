@@ -10,9 +10,9 @@ import {
 } from "./Destination.styles";
 import NavigationMenu from "../components/organisms/NavigationMenu";
 import DestinationMenu from "../components/organisms/DestinationMenu";
-import moon from "./../assets/destination/image-moon.png";
+import europa from "./../assets/destination/image-europa.png";
 
-const Destination = () => {
+const DestinationEuropa = () => {
   return (
     <Container>
       <NavigationMenu />
@@ -21,25 +21,25 @@ const Destination = () => {
           <h2>
             <span>01 </span>Pick your destination
           </h2>
-          <img src={moon} alt="moon" />
+          <img src={europa} alt="europa" />
         </div>
         <Wrapper>
           <DestinationMenu />
-          <h1>Moon</h1>
+          <h1>Europa</h1>
           <StyledText>
-            See our planet as you've never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you're there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is
+            a winter lover's dream. With an icy surface, it's perfect for a bit
+            of ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
           </StyledText>
           <footer>
             <div>
               <SmallText>Avg. distance</SmallText>
-              <StyledParagraph>384,400 km</StyledParagraph>
+              <StyledParagraph>628 mil. km</StyledParagraph>
             </div>
             <StyledDiv>
               <SmallText>Est. travel time</SmallText>
-              <StyledParagraph>3 days</StyledParagraph>
+              <StyledParagraph>3 years</StyledParagraph>
             </StyledDiv>
           </footer>
         </Wrapper>
@@ -48,4 +48,4 @@ const Destination = () => {
   );
 };
 
-export default Destination;
+export default DestinationEuropa;

@@ -14,6 +14,7 @@ export const StyledSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-bottom: 80px;
 `;
 
 export const Wrapper = styled.div`
@@ -36,6 +37,7 @@ export const Wrapper = styled.div`
     font-weight: 100;
     text-align: justify;
     line-height: 150%;
+    letter-spacing: 1px;
   }
 `;
 

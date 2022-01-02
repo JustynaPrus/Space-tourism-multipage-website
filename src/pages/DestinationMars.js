@@ -10,9 +10,9 @@ import {
 } from "./Destination.styles";
 import NavigationMenu from "../components/organisms/NavigationMenu";
 import DestinationMenu from "../components/organisms/DestinationMenu";
-import moon from "./../assets/destination/image-moon.png";
+import mars from "./../assets/destination/image-mars.png";
 
-const Destination = () => {
+const DestinationMars = () => {
   return (
     <Container>
       <NavigationMenu />
@@ -21,25 +21,24 @@ const Destination = () => {
           <h2>
             <span>01 </span>Pick your destination
           </h2>
-          <img src={moon} alt="moon" />
+          <img src={mars} alt="mars" />
         </div>
         <Wrapper>
           <DestinationMenu />
-          <h1>Moon</h1>
+          <h1>Mars</h1>
           <StyledText>
-            See our planet as you've never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you're there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
+            Don't forget to pack your hiking boots. You'll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It's two and a half times the size of Everest!
           </StyledText>
           <footer>
             <div>
               <SmallText>Avg. distance</SmallText>
-              <StyledParagraph>384,400 km</StyledParagraph>
+              <StyledParagraph>225 mil. km</StyledParagraph>
             </div>
             <StyledDiv>
               <SmallText>Est. travel time</SmallText>
-              <StyledParagraph>3 days</StyledParagraph>
+              <StyledParagraph>9 months</StyledParagraph>
             </StyledDiv>
           </footer>
         </Wrapper>
@@ -48,4 +47,4 @@ const Destination = () => {
   );
 };
 
-export default Destination;
+export default DestinationMars;

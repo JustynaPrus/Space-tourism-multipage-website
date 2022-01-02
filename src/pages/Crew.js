@@ -9,7 +9,9 @@ const Crew = () => {
       <NavigationMenu />
       <Wrapper>
         <StyledSection>
-          <h2>02 Meet your crew</h2>
+          <h2>
+            <span>02 </span>Meet your crew
+          </h2>
           <h3>Commander</h3>
           <h1>Douglas Hurley</h1>
           <p>
