@@ -51,6 +51,13 @@ const Technology = () => {
                   >
                     <h1>{data.technology[index].name}</h1>
                     <p>{data.technology[index].description}</p>
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        `/assets/technology/image-${index + 1}-portrait.jpg`
+                      }
+                      alt="technology"
+                    />
                   </div>
                 );
               })}
