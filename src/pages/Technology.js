@@ -54,7 +54,7 @@ const Technology = () => {
                     <img
                       src={
                         process.env.PUBLIC_URL +
-                        `/assets/technology/image-${index + 1}-portrait.jpg`
+                        `/static/media/image-${index + 1}-portrait.jpg`
                       }
                       alt="technology"
                     />
