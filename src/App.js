@@ -17,13 +17,35 @@ function App() {
         <GlobalStyles />
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/destination" element={<Destination />} />
-            <Route path="/destination/mars" element={<DestinationMars />} />
-            <Route path="/destination/europa" element={<DestinationEuropa />} />
-            <Route path="/destination/titan" element={<DestinationTitan />} />
-            <Route path="/crew" element={<Crew />} />
-            <Route path="/technology" element={<Technology />} />
+            <Route
+              path="/Space-tourism-multipage-website/"
+              element={<Home />}
+              exact
+            />
+            <Route
+              path="/Space-tourism-multipage-website/destination"
+              element={<Destination />}
+            />
+            <Route
+              path="/Space-tourism-multipage-website/destination/mars"
+              element={<DestinationMars />}
+            />
+            <Route
+              path="/Space-tourism-multipage-website/destination/europa"
+              element={<DestinationEuropa />}
+            />
+            <Route
+              path="/Space-tourism-multipage-website/destination/titan"
+              element={<DestinationTitan />}
+            />
+            <Route
+              path="/Space-tourism-multipage-website/crew"
+              element={<Crew />}
+            />
+            <Route
+              path="/Space-tourism-multipage-website/technology"
+              element={<Technology />}
+            />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>
