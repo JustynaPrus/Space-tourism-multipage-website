@@ -51,6 +51,10 @@ const Technology = () => {
                   >
                     <h1>{data.technology[index].name}</h1>
                     <p>{data.technology[index].description}</p>
+                    <img
+                      src={data.technology[index].images.portrait}
+                      alt="technology"
+                    />
                   </div>
                 );
               })}
