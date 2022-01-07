@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
     font-size: 28px;
     letter-spacing: 2px;
     font-weight: 100;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     span {
       font-weight: 400;
       opacity: 0.25;

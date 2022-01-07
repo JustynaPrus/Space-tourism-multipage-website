@@ -4,6 +4,7 @@ export const DotsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 6vw;
+  padding-top: 80px;
   .dot {
     cursor: pointer;
     color: white;

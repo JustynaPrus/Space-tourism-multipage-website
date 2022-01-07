@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
     font-size: 16px;
     opacity: 0.5;
     letter-spacing: 1px;
-    padding-top: 80px;
+    padding-top: 100px;
   }
   .active {
     display: flex;
@@ -18,10 +18,10 @@ export const ContentWrapper = styled.div`
   }
   img {
     display: block;
+    padding-right: 4vw;
   }
 `;
 
 export const Wrapper = styled.div`
-  max-width: 40vw;
-  margin-left: 9vw;
+  max-width: 45vw;
 `;

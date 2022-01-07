@@ -11,13 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-`;
-
-export const StyledSection = styled.div`
-  max-width: 40vw;
-  margin-left: 10vw;
+  margin-left: 13vw;
   h3 {
     font-family: "Bellefair";
     font-weight: 100;
@@ -30,13 +24,13 @@ export const StyledSection = styled.div`
     font-family: "Bellefair";
     font-weight: 100;
     font-size: 56px;
+    padding: 10px 0;
   }
   h2 {
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 2px;
     font-weight: 100;
-    padding-bottom: 100px;
     span {
       font-weight: 400;
       opacity: 0.25;
@@ -47,6 +41,6 @@ export const StyledSection = styled.div`
     font-weight: 100;
     font-size: 18px;
     letter-spacing: 1px;
-    max-width: 80%;
+    max-width: 70%;
   }
 `;
