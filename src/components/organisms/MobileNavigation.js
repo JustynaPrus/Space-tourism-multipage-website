@@ -1,21 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import close from "../../assets/shared/icon-close.svg";
-import hamburger from "../../assets/shared/icon-hamburger.svg";
 import { StyledNav, StyledLink, Container } from "./MobileNavigation.styles";
+import Hamburger from "../atoms/Hamburger";
+import CloseIcon from "../atoms/CloseIcon";
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
   return (
     <Container>
-      <img
-        src={hamburger}
-        alt="menu hamburger"
-        onClick={() => setOpen(!open)}
-      />
+      <Hamburger onClick={() => setOpen(!open)} />
       {open && (
         <StyledNav>
-          <img src={close} alt="close" onClick={() => setOpen(!open)} />
+          <CloseIcon src={close} alt="close" onClick={() => setOpen(!open)} />
           <Link
             to="/Space-tourism-multipage-website/"
             style={{ textDecoration: "none" }}

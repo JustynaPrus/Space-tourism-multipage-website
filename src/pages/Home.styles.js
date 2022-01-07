@@ -36,7 +36,11 @@ export const Wrapper = styled.div`
     text-transform: uppercase;
     font-family: "Bellefair";
     font-weight: 200;
-    font-size: 142px;
+    font-size: 9rem;
+    @media ${device.xs} {
+      text-align: center;
+      font-size: 82px;
+    }
     @media ${device.lg} {
       text-align: center;
     }
@@ -62,7 +66,7 @@ export const Wrapper = styled.div`
     }
   }
   @media ${device.lg} {
-    max-width: 60vw;
+    max-width: 80vw;
   }
 `;
 

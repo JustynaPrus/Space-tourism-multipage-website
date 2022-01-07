@@ -8,10 +8,6 @@ export const Container = styled.nav`
     display: flex;
     flex-direction: column;
   }
-  img {
-    cursor: pointer;
-    padding: 20px;
-  }
 `;
 
 export const StyledNav = styled.nav`
@@ -21,11 +17,6 @@ export const StyledNav = styled.nav`
   padding: 0 12vw 0 8vw;
   font-weight: 200;
   letter-spacing: 2px;
-  img {
-    cursor: pointer;
-    align-self: flex-end;
-    padding: 20px 0;
-  }
   span {
     font-weight: 600;
   }
