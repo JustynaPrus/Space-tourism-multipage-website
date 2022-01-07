@@ -3,7 +3,7 @@ import markShuttleworth from "../../assets/crew/image-mark-shuttleworth.png";
 import victorGlover from "../../assets/crew/image-victor-glover.png";
 import anoushehAnsari from "../../assets/crew/image-anousheh-ansari.png";
 
-export default [
+export const CrewImageSlider = [
   {
     title: "Douglas Hurley",
     role: "Commander",

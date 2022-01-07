@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../BreakPoints";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -6,6 +7,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding: 50px 0;
   position: relative;
+  @media ${device.lg} {
+    padding: 0 0 50px 0;
+  }
+
   img {
     padding: 0 50px;
   }
@@ -13,9 +18,12 @@ export const Wrapper = styled.div`
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     display: flex;
-    padding: 0 160px 0 100px;
+    padding: 0 12vw 0 8vw;
     font-weight: 200;
     letter-spacing: 2px;
+    @media ${device.lg} {
+      padding: 0 4vw 0 4vw;
+    }
     span {
       font-weight: 600;
     }
@@ -37,9 +45,12 @@ export const StyledLink = styled.li`
 export const StyledDiv = styled.div`
   background-color: white;
   height: 1px;
-  width: 473px;
+  width: 34vw;
   opacity: 0.25;
   position: absolute;
   left: 180px;
   z-index: 1;
+  @media ${device.lg} {
+    display: none;
+  }
 `;

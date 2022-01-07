@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SliderContent from "../molecules/SliderContent";
-import imageSlider from "../molecules/imageSlider";
+import { imageSlider } from "../molecules/imageSlider";
 import Dots from "../molecules/Dots";
 import { SliderContainer, DotsContaner } from "./Slider.styles";
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CrewSliderContent from "../molecules/CrewSliderContent";
-import CrewImageSlider from "../molecules/CrewImageSlider";
+import { CrewImageSlider } from "../molecules/CrewImageSlider";
 import CrewDots from "../molecules/CrewDots";
 import { SliderContainer } from "./CrewSlider.styles";
 

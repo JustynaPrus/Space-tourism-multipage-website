@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import { device } from "../../BreakPoints";
 
 export const Wrapper = styled.div`
   display: flex;
   list-style: none;
+  @media ${device.lg} {
+    justify-content: center;
+  }
 `;
 
 export const StyledLink = styled.li`

@@ -1,5 +1,8 @@
 import styled from "styled-components";
+import { device } from "./../BreakPoints";
 import backgroundCrew from "./../assets/crew/background-crew-desktop.jpg";
+import backgroundTablet from "./../assets/crew/background-crew-tablet.jpg";
+import backgroundMobile from "./../assets/crew/background-crew-mobile.jpg";
 
 export const Container = styled.div`
   color: white;
@@ -8,10 +11,20 @@ export const Container = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media ${device.lg} {
+    background-image: url(${backgroundTablet});
+  }
+  @media ${device.sm} {
+    background-image: url(${backgroundMobile});
+  }
 `;
 
 export const Wrapper = styled.div`
   margin-left: 13vw;
+  @media ${device.lg} {
+    margin-left: 0;
+    text-align: center;
+  }
   h3 {
     font-family: "Bellefair";
     font-weight: 100;
@@ -42,5 +55,8 @@ export const Wrapper = styled.div`
     font-size: 18px;
     letter-spacing: 1px;
     max-width: 70%;
+    @media ${device.lg} {
+      max-width: 100%;
+    }
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../BreakPoints";
 
 export const ContentWrapper = styled.div`
   h3 {
@@ -12,16 +13,28 @@ export const ContentWrapper = styled.div`
   .active {
     display: flex;
     justify-content: space-between;
+    @media ${device.lg} {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
   .inactive {
     display: none;
   }
   img {
     display: block;
+    @media ${device.lg} {
+      max-width: 80%;
+    }
   }
 `;
 
 export const Wrapper = styled.div`
   max-width: 40vw;
   margin-left: 9vw;
+  @media ${device.lg} {
+    max-width: 60vw;
+    margin-left: 0;
+    padding-top: 100px;
+  }
 `;

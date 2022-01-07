@@ -2,7 +2,7 @@ import launchVehiclePortrait from "../../assets/technology/image-1-portrait.jpg"
 import spaceCapsulPortrait from "../../assets/technology/image-2-portrait.jpg";
 import spacePortPortrait from "../../assets/technology/image-3-portrait.jpg";
 
-export default [
+export const imageSlider = [
   {
     title: "Launch vehicle",
     description:
