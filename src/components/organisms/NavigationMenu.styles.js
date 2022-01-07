@@ -9,36 +9,14 @@ export const Wrapper = styled.div`
   position: relative;
   @media ${device.lg} {
     padding: 0 0 50px 0;
-  }
-
-  img {
-    padding: 0 50px;
-  }
-  nav {
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    display: flex;
-    padding: 0 12vw 0 8vw;
-    font-weight: 200;
-    letter-spacing: 2px;
-    @media ${device.lg} {
-      padding: 0 4vw 0 4vw;
-    }
-    span {
-      font-weight: 600;
-    }
+    align-items: flex-start;
   }
 `;
 
-export const StyledLink = styled.li`
-  color: white;
-  text-decoration: none;
-  padding: 30px 15px;
-  text-transform: uppercase;
-  list-style: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-  &:hover {
-    border-bottom: 2px solid white;
+export const StyledImg = styled.img`
+  padding: 0 50px;
+  @media ${device.lg} {
+    padding: 20px;
   }
 `;
 

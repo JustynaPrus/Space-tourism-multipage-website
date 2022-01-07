@@ -55,6 +55,7 @@ export const StyledSection = styled.div`
   img {
     @media ${device.lg} {
       margin-bottom: 30px;
+      max-width: 80vw;
     }
   }
   h2 {

@@ -1,5 +1,5 @@
 export const size = {
-  xs: "320px",
+  xs: "450px",
   sm: "768",
   lg: "1200px",
 };
