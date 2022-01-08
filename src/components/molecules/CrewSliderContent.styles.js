@@ -2,12 +2,7 @@ import styled from "styled-components";
 import { device } from "../../BreakPoints";
 
 export const ContentWrapper = styled.div`
-  @media ${device.lg} {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
   h3 {
     font-weight: 100;
     text-transform: uppercase;
@@ -22,8 +17,12 @@ export const ContentWrapper = styled.div`
   .active {
     display: flex;
     justify-content: space-between;
+    @media ${device.xs} {
+      align-items: center;
+    }
     @media ${device.lg} {
       flex-direction: column;
+      align-items: center;
     }
   }
   .inactive {
@@ -35,14 +34,18 @@ export const ContentWrapper = styled.div`
     padding-top: 10vw;
     @media ${device.lg} {
       padding-right: 0px;
-      max-width: 80vw;
+      max-width: 60vw;
     }
+  }
+  @media ${device.lg} {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const Wrapper = styled.div`
   max-width: 45vw;
   @media ${device.lg} {
-    max-width: 60vw;
+    max-width: 80vw;
   }
 `;

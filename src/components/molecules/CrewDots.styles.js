@@ -2,21 +2,22 @@ import styled from "styled-components";
 import { device } from "../../BreakPoints";
 
 export const DotsWrapper = styled.div`
-  display: flex;
   position: absolute;
+  display: flex;
   @media ${device.sm} {
     top: 100%;
     left: 50%;
     transform: translate(-50%, 0);
   }
+
   top: 400px;
   left: 0;
+
   @media ${device.lg} {
-    top: 30%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, 0);
   }
-
   .dot {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
@@ -29,7 +30,6 @@ export const DotsWrapper = styled.div`
       margin: 0 10px 25px 10px;
     }
   }
-
   .active-dot {
     color: #0b0d17;
     background-color: white;
