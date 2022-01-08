@@ -33,14 +33,13 @@ export const Wrapper = styled.div`
   max-width: 30vw;
   margin-top: 80px;
   h1 {
+    @media ${device.xs} {
+      font-size: 72px;
+    }
     text-transform: uppercase;
     font-family: "Bellefair";
     font-weight: 200;
     font-size: 9rem;
-    @media ${device.xs} {
-      text-align: center;
-      font-size: 82px;
-    }
     @media ${device.lg} {
       text-align: center;
     }

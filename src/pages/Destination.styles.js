@@ -22,6 +22,9 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   max-width: 30vw;
   h1 {
+    @media ${device.xs} {
+      font-size: 72px;
+    }
     font-family: "Bellefair";
     text-transform: uppercase;
     font-weight: 100;
@@ -34,6 +37,7 @@ export const Wrapper = styled.div`
     margin-top: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
     @media ${device.lg} {
+      flex-direction: column;
       justify-content: center;
     }
   }
@@ -72,9 +76,10 @@ export const StyledSection = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-  margin-left: 70px;
+  margin: 0 35px;
   @media ${device.lg} {
-    margin-left: 100px;
+    margin: 0 50px;
+    padding-top: 25px;
   }
 `;
 

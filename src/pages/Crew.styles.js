@@ -21,10 +21,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   margin-left: 13vw;
-  @media ${device.lg} {
-    margin-left: 0;
-    text-align: center;
-  }
+
   h3 {
     font-family: "Bellefair";
     font-weight: 100;
@@ -58,5 +55,9 @@ export const Wrapper = styled.div`
     @media ${device.lg} {
       max-width: 100%;
     }
+  }
+  @media ${device.lg} {
+    margin-left: 0;
+    text-align: center;
   }
 `;

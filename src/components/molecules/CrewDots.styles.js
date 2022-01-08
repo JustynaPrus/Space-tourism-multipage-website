@@ -4,13 +4,13 @@ import { device } from "../../BreakPoints";
 export const DotsWrapper = styled.div`
   display: flex;
   position: absolute;
-  top: 400px;
-  left: 0;
   @media ${device.sm} {
-    top: 65%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, 0);
   }
+  top: 400px;
+  left: 0;
   @media ${device.lg} {
     top: 30%;
     left: 50%;

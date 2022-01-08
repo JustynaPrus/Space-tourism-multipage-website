@@ -1,52 +1,22 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Container } from "./MobileNavigation.styles";
+import hamburger from "../../assets/shared/icon-hamburger.svg";
 import close from "../../assets/shared/icon-close.svg";
-import { StyledNav, StyledLink, Container } from "./MobileNavigation.styles";
-import Hamburger from "../atoms/Hamburger";
-import CloseIcon from "../atoms/CloseIcon";
+import Links from "../molecules/Links";
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
+  const hamburgerIcon = (
+    <img src={hamburger} alt="menu hamburger" onClick={() => setOpen(!open)} />
+  );
+
+  const closeIcon = (
+    <img src={close} alt="close" onClick={() => setOpen(!open)} />
+  );
   return (
     <Container>
-      <Hamburger onClick={() => setOpen(!open)} />
-      {open && (
-        <StyledNav>
-          <CloseIcon src={close} alt="close" onClick={() => setOpen(!open)} />
-          <Link
-            to="/Space-tourism-multipage-website/"
-            style={{ textDecoration: "none" }}
-          >
-            <StyledLink>
-              <span>00</span> Home
-            </StyledLink>
-          </Link>
-          <Link
-            to="/Space-tourism-multipage-website/destination"
-            style={{ textDecoration: "none" }}
-          >
-            <StyledLink>
-              <span>01</span> Destination
-            </StyledLink>
-          </Link>
-          <Link
-            to="/Space-tourism-multipage-website/crew"
-            style={{ textDecoration: "none" }}
-          >
-            <StyledLink>
-              <span>02</span> Crew
-            </StyledLink>
-          </Link>
-          <Link
-            to="/Space-tourism-multipage-website/technology"
-            style={{ textDecoration: "none" }}
-          >
-            <StyledLink>
-              <span>03</span> Technology
-            </StyledLink>
-          </Link>
-        </StyledNav>
-      )}
+      {open ? closeIcon : hamburgerIcon}
+      {open && <Links />}
     </Container>
   );
 };
