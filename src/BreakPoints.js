@@ -1,6 +1,6 @@
 export const size = {
   xs: "460px",
-  sm: "768",
+  sm: "768px",
   lg: "1200px",
 };
 
